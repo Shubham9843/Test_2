@@ -1,0 +1,261 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-color: #fff;
+    padding-top: 60px; 
+}
+
+header {
+	 position: fixed; /* Make the header fixed */
+    top: 0; /* Position it at the top of the viewport */
+    width: 100%; /* Take up the full width */	
+    z-index: 1000;
+    background-color: #333;
+    padding:10px 0;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 150px;
+    height:auto;
+    margin: 0; /* Adjust margin as needed */
+}
+
+.logo img {
+    width: 120%;
+    height: 100%;
+    object-fit: contain; /* Preserve aspect ratio and contain within the available space */
+    
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	margin-Right: 20px;
+}
+
+nav a {
+	font-family: 'Times New Roman', Times, serif;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+	color: #ffd700;
+}
+
+.contact-container {
+	padding: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.social-links {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.social-link {
+	width: 5rem;
+	height: 5rem;
+	background-color: #fff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: #000;
+	overflow: hidden;
+	border: 3px solid #fff;
+	position: relative;
+	transition: 0.5s ease;
+	margin: 10px;
+}
+
+.social-link::before {
+	content: "";
+	position: absolute;
+	background: var(--bg);
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	scale: 1 0;
+	transform-origin: bottom;
+	transition: scale 0.5s ease;
+}
+
+.social-link:hover::before {
+	scale: 1 1;
+}
+
+.icon {
+	font-size: 2rem;
+	color: #000;
+	transition: 0.5s ease;
+	z-index: 2;
+}
+
+.social-link:hover .icon {
+	color: white;
+	transform: rotateY(360deg);
+}
+
+.social-icons {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.social-icon {
+
+	width: 3rem;
+	height: 3rem;
+	background-color: #fff;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: #000;
+	overflow: hidden;
+	border: 3px solid #fff;
+	position: relative;
+	transition: 0.5s ease;
+	margin-left: 5px;
+	margin-inline: 3px 2px;
+	margin-top: 4px;
+}
+
+.social-icon::before {
+	content: "";
+	position: absolute;
+	background: var(--bg);
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	scale: 1 0;
+	transform-origin: bottom;
+	transition: scale 0.5s ease;
+}
+
+.social-icon:hover::before {
+	scale: 1 1;
+}
+
+.icon {
+	font-size: 2rem;
+	color: #000;
+	transition: 0.5s ease;
+	z-index: 2;
+}
+
+.social-icon:hover .icon {
+	color: white;
+	transform: rotateY(360deg);
+}
+
+.map-container {
+	width: 50%;
+}
+
+.map-container iframe {
+	width: 350px;
+	height: 350px;
+	margin-left: 0px;
+	border: 10%;
+	border-color: red;
+}
+
+.quick-links {
+	width: 100%;
+	margin-top: 0px;
+	text-align: center;
+}
+
+.quick-links h2 {
+	color: black;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.quick-links ul {
+	list-style: none;
+	padding: 0;
+	margin-top: 20PX;
+	margin-bottom: 15px;
+}
+
+.footer {
+	background-color: #333;
+	padding: 0px 0;
+	color: gold;
+	text-align: left;
+	margin-bottom: 0;
+}
+
+.quick-links ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.quick-links a {
+	color: White;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.quick-links a:hover {
+	color: #ffd700;
+}
+
+.card {
+	background: linear-gradient(#2c3e50 0%, #34495e 50%, #2c3e50 100%);
+	border: 1px solid #ddd;
+	border-radius: 20px;
+	padding: 5px;
+	margin-bottom: 20px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	max-width: 100%;
+	box-sizing: border-box;
+	margin-left: 100px;
+	margin-right: 100px;
+	/* Ensures padding and border are included in max-width */
+}
+
+.contact-container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	/* Allows items to wrap to the next line if there's not enough space */
+}
+
+.social-links,
+.map-container {
+	width: calc(33.33% - 20px);
+	/* Adjusted width to allow for margins and borders */
+	box-sizing: border-box;
+	/* Ensures padding and border are included in width */
+}
+
+.map-container iframe {
+	width: 100%;
+	height: 450px;
+	border: 0;
+}

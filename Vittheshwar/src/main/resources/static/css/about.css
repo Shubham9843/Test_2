@@ -1,0 +1,252 @@
+body {
+	font-family: 'Times New Roman', Times, serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+body {
+    font-family: 'Comic Sans MS', cursive;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-color: #fff;
+    padding-top: 60px; 
+}
+
+header {
+	position: fixed; /* Make the header fixed */
+    top: 0; /* Position it at the top of the viewport */
+    width: 100%; /* Take up the full width */	
+    z-index: 1000;
+    background-color: #333;
+    padding:10px 0;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 150px;
+    height:auto;
+    margin: 0; /* Adjust margin as needed */
+}
+
+.logo img {
+    width: 120%;
+    height: 100%;
+    object-fit: contain; /* Preserve aspect ratio and contain within the available space */
+    
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+nav a {
+	font-family: 'Times New Roman', Times, serif;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+	color: #ffd700;
+}
+
+section {
+	padding: 20px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+}
+
+/* ... Your existing styles ... */
+.founders-section {
+	padding: 20px;
+	background-color: #f9f9f9;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-top: 20px;
+	text-align: center;
+	overflow-x: auto;
+}
+
+.founders-container {
+	display: flex;
+	overflow-x: auto;
+	padding: 10px;
+}
+
+.founder-card {
+	flex: 0 0 auto;
+	width: 250px; /* Set the width */
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin: 10px;
+	padding: 16px;
+	text-align: center;
+	background-color: #fff;
+}
+
+.founder-card img {
+	width: 100%;
+	height: 350px; /* Set the height */
+	object-fit: cover;
+	border-radius: 8px 8px 0 0;
+	/* Optional: Add border-radius to the top corners of the image */
+}
+
+.founder-card h2 {
+	color: #333;
+	margin-bottom: 8px;
+}
+
+.founder-card p {
+	color: #666;
+}
+
+footer {
+	background-color: #333;
+	color: gold;
+	text-align: center;
+	padding: 1em;
+}
+
+.temple-details {
+	padding: 20px;
+	width:800px;
+	height:350px;
+	background-color: #2222;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin:20px 350px;
+	text-align: center;
+}
+
+.temple-info, .god-details {
+	margin-bottom: 20px;
+}
+
+.temple-info h2, .god-details h2 {
+	color: Green;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.temple-info p, .god-details p {
+	color: #555;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+h2 {
+	color: Green;
+}
+
+.volunteers-section {
+	padding: 20px;
+	background-color: #f9f9f9;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-top: 20px;
+	text-align: center;
+	overflow-x: auto;
+}
+
+.volunteers-container {
+	display: flex;
+	overflow-x: auto;
+	padding: 10px;
+}
+
+.volunteer-card {
+	flex: 0 0 auto;
+	width: 250px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin: 10px;
+	padding: 16px;
+	text-align: center;
+	background-color: #fff;
+}
+
+.volunteer-card img {
+	width: 100%;
+	height: 350px; /* Adjust the height as needed */
+	object-fit: cover;
+	border-radius: 8px 8px 0 0;
+}
+
+.volunteer-card h3 {
+	color: #333;
+	margin-bottom: 8px;
+}
+.sev-section {
+	padding: 20px;
+	background-color: #f9f9f9;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin-top: 20px;
+	text-align: center;
+	overflow-x: auto;
+}
+
+.sev-container {
+	display: flex;
+	overflow-x: auto;
+	padding: 10px;
+}
+
+.sev-card {
+	flex: 0 0 auto;
+	width: 250px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin: 10px;
+	padding: 16px;
+	text-align: center;
+	background-color: #fff;
+}
+
+.sev-card img {
+	width: 100%;
+	height: 350px; /* Adjust the height as needed */
+	object-fit: cover;
+	border-radius: 8px 8px 0 0;
+}
+
+.sev-card h3 {
+	color: #333;
+	margin-bottom: 8px;
+}
+footer {
+	background-color: #333;
+	color: gold;
+	text-align: center;
+	padding: 1em;
+}
+footer p{
+text-align:left;
+ flex: 1;
+}
+.social-links a {
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+	margin-left: 100px;
+	transition: color 0.3s ease-in-out;
+	text-align: center;
+}
+.social-links a:hover {
+	color: white;/* #ffd700 */
+}

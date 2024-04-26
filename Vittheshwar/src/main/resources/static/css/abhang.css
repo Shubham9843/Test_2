@@ -1,0 +1,168 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f0f0f0;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #333;
+	color: #fff;
+	padding: 10px 0;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	max-width: 150px;
+	height: auto;
+	margin: 0;
+}
+
+.logo img {
+	width: 120%;
+	height: 100%;
+	object-fit: contain;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+nav ul li {
+	margin-right: 20px;
+}
+
+nav a {
+font-family: 'Times New Roman', Times, serif;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+	transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+	color: #ffd700;
+}
+
+main {
+	padding-top: 70px; /* Adjusted to accommodate fixed header */
+}
+
+.card-content {
+	display: flex;
+	margin-top: 20px;
+	width: 80%;
+	max-width: 600px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	margin: 20px auto;
+	padding: 20px;
+	text-align: center;
+	align-items: center;
+	flex-direction: column
+
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: orangered;
+}
+
+.card-content p {
+	margin-bottom: 10px; /* Optional: Adjust margin for paragraphs */
+}
+
+.card-content .content {
+	margin-bottom: 10px;
+}
+
+.card-content .full-content {
+	display: none;
+}
+
+.expanded .full-content {
+	display: block;
+}
+
+.read-more-btn{
+	background-position: right;
+	color: black;
+	background-color: white;
+	transition: color 0.3s ease-in-out;
+	font-size: 16px;
+}
+.read-more-btn:hover{
+	background-color: black;
+	color: white;
+
+}
+/*.image-card {
+ 
+}
+
+}*/
+/*.content-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-card {
+    width: 30%;  Adjust width as needed 
+   
+    max-width: 100px;
+    max-height: 250px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+}
+
+.image-card img {
+    width: 100%;
+    max-width: 100px;
+    max-height: 200px;
+    align-items: center;
+}
+
+.card {
+    width: 70%;  Adjust width as needed 
+     Other card styles 
+}
+*/
+.social-links a {
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+	margin-left: 100px;
+	transition: color 0.3s ease-in-out;
+	text-align: center;
+}
+
+footer.social-links a:hover {
+	color: white; /* #ffd700 */
+}
+
+footer.footer {
+	background-color: #333;
+	color: White;
+	text-align: center;
+	padding: 1em;
+}
+
+footer.footer p {
+	text-align: left;
+	flex: 1;
+	color: gold;
+}
